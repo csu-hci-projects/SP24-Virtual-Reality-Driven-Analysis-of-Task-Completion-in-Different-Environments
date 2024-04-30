@@ -4,17 +4,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class StartGame : MonoBehaviour
+public class MenuOptions : MonoBehaviour
 {
-    private float timer = 300f; // 5 minutes in seconds
+     float timer = 300f; // 5 minutes in seconds
     private bool timerRunning = false;
     public TMP_Text timerText;
+    int ttc = 0;
 
+    int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     // Start is called before the first frame update
     void Start()
     {
         // We don't start the timer automatically anymore
-        // StartTimer();
+         StartTimer();
     }
 
     void Update()
@@ -31,13 +33,16 @@ public class StartGame : MonoBehaviour
 
             UpdateTimerDisplay();
         }
+            ttc = Mathf.FloorToInt(timer);
+            ttc = 300 - ttc;
+            print("completion time: " + ttc);
     }
 
-    // Method to start the timer when the button is clicked
-    public void StartTimerOnClick()
-    {
-        StartTimer();
-    }
+    
+    //public void StartTimerOnClick()
+    //{
+   //     StartTimer();
+   // }
 
     public void StartTimer()
     {
@@ -52,7 +57,35 @@ public class StartGame : MonoBehaviour
     void UpdateTimerDisplay()
     {
         int seconds = Mathf.FloorToInt(timer);
-
+        ttc = seconds;
         timerText.text = seconds.ToString();
     }
+
+    public void LoadNextScene()
+    {
+        
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+       
+        //int seconds = Mathf.FloorToInt(timer);
+        //int seconds = Mathf.FloorToInt(timer);
+        //string time = seconds.ToString();
+        print("TTC TIME current scene: " + currentSceneIndex + " time to complete: " + ttc);
+        print("TIMER TIME current scene:" + currentSceneIndex + "time to complete: " +  timer );
+        
+        SceneManager.LoadScene(currentSceneIndex + 1);
+    }
+
+        IEnumerator LoadNextSceneAtEndOfFrame()
+    {
+        yield return new WaitForEndOfFrame(); // Wait until the end of the frame
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        UpdateTimerDisplay(); // Ensure timer text is up-to-date
+        print("current scene: " + currentSceneIndex + " time to complete: " + timer);
+        SceneManager.LoadScene(currentSceneIndex + 1);
+    }
+
+  
+
+    
 }
