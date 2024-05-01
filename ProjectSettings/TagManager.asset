@@ -16,6 +16,7 @@ TagManager:
   - cross
   - halftriangle
   - haloCube
+  - start
   layers:
   - Default
   - TransparentFX
