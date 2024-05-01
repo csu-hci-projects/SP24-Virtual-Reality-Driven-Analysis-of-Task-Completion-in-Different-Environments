@@ -285,7 +285,7 @@ Transform:
   m_GameObject: {fileID: 11572152}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.672, y: 0.2885, z: 8.56}
+  m_LocalPosition: {x: 0.54, y: 0.2885, z: 8.56}
   m_LocalScale: {x: 0.26030844, y: 0.20146167, z: 0.17627077}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -574,7 +574,7 @@ GameObject:
   - component: {fileID: 31052651}
   m_Layer: 0
   m_Name: haloCube
-  m_TagString: halo
+  m_TagString: cube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2187,7 +2187,7 @@ Transform:
   m_GameObject: {fileID: 46365495}
   serializedVersion: 2
   m_LocalRotation: {x: -4.1137618e-11, y: 0.70710367, z: -4.117744e-11, w: 0.70711}
-  m_LocalPosition: {x: -2.57, y: 0.18830538, z: 2.29}
+  m_LocalPosition: {x: -2.57, y: 0.18830538, z: 4.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5333,7 +5333,7 @@ Transform:
   m_GameObject: {fileID: 79309249}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.9999128, w: 0.0132092405}
-  m_LocalPosition: {x: 10.33, y: 0.79, z: 2.9}
+  m_LocalPosition: {x: 10.33, y: 0.85, z: 2.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5372,7 +5372,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1564765583}
+  m_Mesh: {fileID: 1747061959}
 --- !u!33 &79309253
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -7400,13 +7400,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1519520463}
     m_Modifications:
+    - target: {fileID: 3768215008265120455, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7cef0735c38a1a248bc8b694495dd8a7, type: 2}
     - target: {fileID: 4769098102207602864, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602864, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.391
+      value: -2.39
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602864, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7414,7 +7418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602864, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.19
+      value: 5.47
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602864, guid: 2ed984a58a974166bf92c82a74380454, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7498,7 +7502,7 @@ Transform:
   m_GameObject: {fileID: 138659890}
   serializedVersion: 2
   m_LocalRotation: {x: -0.002162516, y: 0.70710355, z: 0.7070261, w: 0.010676115}
-  m_LocalPosition: {x: 0.626989, y: 0.37643862, z: -0.63197577}
+  m_LocalPosition: {x: -0.21, y: 0.51, z: -0.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8129,7 +8133,7 @@ GameObject:
   - component: {fileID: 182771094}
   m_Layer: 0
   m_Name: crossCube
-  m_TagString: cross
+  m_TagString: pyarmid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10920,13 +10924,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1519520463}
     m_Modifications:
+    - target: {fileID: 261398194632122527, guid: d5615d616019430d9c2e8727e71c97fb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9d1687b76f39abb469a2577dc12df9b2, type: 2}
     - target: {fileID: 4257412417454173056, guid: d5615d616019430d9c2e8727e71c97fb, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173056, guid: d5615d616019430d9c2e8727e71c97fb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.392
+      value: -2.49
       objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173056, guid: d5615d616019430d9c2e8727e71c97fb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10934,7 +10942,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173056, guid: d5615d616019430d9c2e8727e71c97fb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.201
+      value: 3.36
       objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173056, guid: d5615d616019430d9c2e8727e71c97fb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10971,6 +10979,14 @@ PrefabInstance:
     - target: {fileID: 4257412417454173071, guid: d5615d616019430d9c2e8727e71c97fb, type: 3}
       propertyPath: m_Name
       value: triangle placment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058481881298704847, guid: d5615d616019430d9c2e8727e71c97fb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058481881298704847, guid: d5615d616019430d9c2e8727e71c97fb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6373926462258952814, guid: d5615d616019430d9c2e8727e71c97fb, type: 3}
       propertyPath: m_InteractableSource
@@ -11335,7 +11351,7 @@ GameObject:
   - component: {fileID: 465273468}
   m_Layer: 0
   m_Name: archCube
-  m_TagString: arch
+  m_TagString: stairs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13080,7 +13096,7 @@ Transform:
   m_GameObject: {fileID: 494118627}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.0016533431, z: -0, w: 0.9999987}
-  m_LocalPosition: {x: -2.355, y: 0.26600003, z: 4.529}
+  m_LocalPosition: {x: -2.35, y: 0.26600003, z: 2.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14674,7 +14690,7 @@ Transform:
   m_GameObject: {fileID: 633598600}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.418, y: 0.18830538, z: 3.6}
+  m_LocalPosition: {x: -2.42, y: 0.18830538, z: 1.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16071,7 +16087,7 @@ GameObject:
   - component: {fileID: 868784331}
   m_Layer: 0
   m_Name: trapazoidCube
-  m_TagString: trapazoid
+  m_TagString: hexagon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20382,15 +20398,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.397
+      value: -0.91
       objectReference: {fileID: 0}
     - target: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.257
+      value: 0.26
       objectReference: {fileID: 0}
     - target: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.671
+      value: 8.67
       objectReference: {fileID: 0}
     - target: {fileID: 7517549319329480229, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20428,6 +20444,10 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8321842482108814056, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 883257837e6be9b4f8803bea919f56ef, type: 2}
     - target: {fileID: 8829556308807989119, guid: 521327bdbcb341f782d36f02cab76cb0, type: 3}
       propertyPath: m_InteractableSource
       value: 
@@ -20689,7 +20709,7 @@ GameObject:
   - component: {fileID: 1182594694}
   m_Layer: 0
   m_Name: stairCube
-  m_TagString: stairs
+  m_TagString: arch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25878,7 +25898,7 @@ GameObject:
   - component: {fileID: 1289378233}
   m_Layer: 0
   m_Name: cubeCube
-  m_TagString: cube
+  m_TagString: halo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27861,7 +27881,7 @@ Transform:
   m_GameObject: {fileID: 1453048481}
   serializedVersion: 2
   m_LocalRotation: {x: 0.45368284, y: 0.54237616, z: -0.45368284, w: 0.54237616}
-  m_LocalPosition: {x: -2.504, y: -0.039, z: 5.37}
+  m_LocalPosition: {x: -2.5, y: -0.039, z: 7.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29659,6 +29679,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3582751571229401034, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7cef0735c38a1a248bc8b694495dd8a7, type: 2}
+    - target: {fileID: 4016794420947020278, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9d1687b76f39abb469a2577dc12df9b2, type: 2}
+    - target: {fileID: 4623042707566445918, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 883257837e6be9b4f8803bea919f56ef, type: 2}
     - target: {fileID: 4952896753891458146, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
       propertyPath: m_Extrude
       value: 0
@@ -30178,7 +30210,7 @@ Transform:
   m_GameObject: {fileID: 1545347373}
   serializedVersion: 2
   m_LocalRotation: {x: 0.011739192, y: 0.7580409, z: 0.65195847, w: 0.013649401}
-  m_LocalPosition: {x: -0.39037955, y: 0.23791397, z: -0.50714874}
+  m_LocalPosition: {x: 0.53, y: 0.21, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32522,7 +32554,7 @@ GameObject:
   - component: {fileID: 1866755626}
   m_Layer: 0
   m_Name: pyramidCube
-  m_TagString: pyarmid
+  m_TagString: cross
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34504,7 +34536,7 @@ GameObject:
   - component: {fileID: 1952040270}
   m_Layer: 0
   m_Name: halftriangleCube
-  m_TagString: halftriangle
+  m_TagString: triangle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37055,7 +37087,7 @@ GameObject:
   - component: {fileID: 2053194411}
   m_Layer: 0
   m_Name: triangle cube
-  m_TagString: triangle
+  m_TagString: halftriangle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38633,7 +38665,7 @@ Transform:
   m_GameObject: {fileID: 2091012547}
   serializedVersion: 2
   m_LocalRotation: {x: 0.00000005960463, y: -0.000000029802315, z: -0.6746587, w: 0.7381298}
-  m_LocalPosition: {x: -2.323, y: 0.268, z: 6.15}
+  m_LocalPosition: {x: -2.32, y: 0.268, z: 6.21}
   m_LocalScale: {x: 0.21230432, y: 0.08474589, z: 0.19433214}
   m_ConstrainProportionsScale: 0
   m_Children: []

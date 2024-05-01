@@ -19,7 +19,10 @@ EditorBuildSettings:
     guid: 5fd6495a5ae43974a9bad09c154ac2c2
   - enabled: 1
     path: Assets/Scenes/nutral2.unity
-    guid: 8720b669506bd4447b1a1d81d0eafe06
+    guid: cd6edfeabea8f0f499ed630c507e176d
+  - enabled: 1
+    path: Assets/Scenes/nutral3.unity
+    guid: 2b8f024143b751c4cb50f6854c4c7512
   - enabled: 1
     path: Assets/Scenes/End.unity
     guid: b7ced15e5691f9b4fa8314f3370158f7

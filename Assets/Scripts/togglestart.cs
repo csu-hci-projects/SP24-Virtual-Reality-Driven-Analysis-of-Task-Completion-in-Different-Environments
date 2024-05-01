@@ -11,7 +11,7 @@ public class MenuOptions : MonoBehaviour
     public TMP_Text timerText;
     int ttc = 0;
 
-    int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -33,9 +33,10 @@ public class MenuOptions : MonoBehaviour
 
             UpdateTimerDisplay();
         }
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             ttc = Mathf.FloorToInt(timer);
             ttc = 300 - ttc;
-            print("completion time: " + ttc);
+           // print("completion time: " + ttc + "Current Scene index: " + currentSceneIndex);
     }
 
     
@@ -64,8 +65,7 @@ public class MenuOptions : MonoBehaviour
     public void LoadNextScene()
     {
         
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-
+          int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
        
         //int seconds = Mathf.FloorToInt(timer);
         //int seconds = Mathf.FloorToInt(timer);
@@ -76,14 +76,6 @@ public class MenuOptions : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
-        IEnumerator LoadNextSceneAtEndOfFrame()
-    {
-        yield return new WaitForEndOfFrame(); // Wait until the end of the frame
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        UpdateTimerDisplay(); // Ensure timer text is up-to-date
-        print("current scene: " + currentSceneIndex + " time to complete: " + timer);
-        SceneManager.LoadScene(currentSceneIndex + 1);
-    }
 
   
 
