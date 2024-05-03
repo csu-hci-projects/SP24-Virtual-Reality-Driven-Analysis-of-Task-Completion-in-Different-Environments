@@ -70,7 +70,7 @@ public class MenuOptions : MonoBehaviour
         //int seconds = Mathf.FloorToInt(timer);
         //int seconds = Mathf.FloorToInt(timer);
         //string time = seconds.ToString();
-        print("TTC TIME current scene: " + currentSceneIndex + " time to complete: " + ttc);
+        //print("TTC TIME current scene: " + currentSceneIndex + " time to complete: " + ttc);
         print("TIMER TIME current scene:" + currentSceneIndex + "time to complete: " +  timer );
         
         SceneManager.LoadScene(currentSceneIndex + 1);

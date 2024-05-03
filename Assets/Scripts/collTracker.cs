@@ -12,14 +12,14 @@ public class Halo : MonoBehaviour
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         col += 1;
     if (other.gameObject.tag == gameObject.tag){
-        print( "Collison object: " + gameObject.tag + "coll count: " + col + "Curr Secne Index: " + currentSceneIndex);
+       // print( "Collison object: " + gameObject.tag + "coll count: " + col + "Curr Secne Index: " + currentSceneIndex);
       //  print("coll count: " + col); "other gameobject : " + other.gameObject.tag +
        Destroy(other.gameObject);
        // Debug.Log("collision count : " + col + "testing");
     }
     else{
         err += 1;
-        print("wrong selection for object: " + gameObject.tag + "total ,wrong colliusions: " + col + " , " + err + "Curr Secne Index: " + currentSceneIndex);
+        //print("wrong selection for object: " + gameObject.tag + "total ,wrong colliusions: " + col + " , " + err + "Curr Secne Index: " + currentSceneIndex);
 
     }
     
